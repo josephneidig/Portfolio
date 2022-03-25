@@ -1,4 +1,6 @@
-var i = 0;
+var i = 0; // Flag for navigation; 0 = hidden, 1 = visible
+
+// Toggle navigation visibility
 function toggleNav()
 {
   if (i == 0)
