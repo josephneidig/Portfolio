@@ -1,3 +1,10 @@
+/* Enable smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Styling for topbar & universal page content */
+
 body {
   background-color: #222222;
   margin: 0;
@@ -74,18 +81,18 @@ nav .close-btn {
 }
 
 /* Styling for home & about content */
-.intro {
+#intro {
   padding: 5px 0 30px 0;
   background-color: #43A963;
   color: white;
   text-align: center;
 }
 
-.intro h1 {
+#intro h1 {
   font-size: 3em;
 }
 
-.intro h3 {
+#intro h3 {
   font-size: 1.5em;
 }
 
@@ -95,7 +102,7 @@ nav .close-btn {
   color: white;
 }
 
-.about {
+#about {
   margin: 15px 25% 0;
   padding: 1px 0 10px 0;
   border-radius: 15px;
@@ -104,7 +111,7 @@ nav .close-btn {
   color: #111;
 }
 
-.about p {
+#about p {
   margin: 0 5% 15px;
   text-align: left;
   font-family: 'Helvetica', sans-serif;
@@ -115,16 +122,16 @@ nav .close-btn {
 
 
 /* Styling for projects content */
-.projects {
+#projects {
   color: white;
 }
 
-.projects h2 {
+#projects h2 {
   font-size: 3em;
   text-align: center;
 }
 
-.projects p {
+#projects p {
   margin: 0 27.5% 15px;
   text-align: left;
   font-family: 'Helvetica', sans-serif;
