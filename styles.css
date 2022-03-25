@@ -110,10 +110,21 @@ nav .close-btn {
 
 
 /* Styling for projects content */
+.projects {
+  color: white;
+}
+
 .projects h2 {
   font-size: 3em;
-  color: white;
   text-align: center;
+}
+
+.projects p {
+  margin: 0 27.5% 15px;
+  text-align: left;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 2;
+  letter-spacing: 1px;
 }
 
 /* Fade-in animation styling */
