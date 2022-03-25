@@ -109,6 +109,7 @@ nav .close-btn {
   width: 50%;
   background-color: white;
   color: #111;
+  scroll-margin-top: 5em;
 }
 
 #about p {
@@ -124,6 +125,7 @@ nav .close-btn {
 /* Styling for projects content */
 #projects {
   color: white;
+  scroll-margin-top: 5em;
 }
 
 #projects h2 {
