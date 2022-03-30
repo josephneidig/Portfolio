@@ -120,7 +120,23 @@ nav .close-btn {
   letter-spacing: 1px;
 }
 
+/* Styling for text boxes in projects & experience sections */
+.text-box {
+	margin: 15px 25% 0;
+	padding: 20px 0 10px 0;
+	border-radius: 15px;
+	width: 50%;
+	background-color: white;
+	color: #111;
+}
 
+.text-box p {
+  margin: 0 5% 15px;
+  text-align: left;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 2;
+  letter-spacing: 1px;
+}
 
 /* Styling for projects content */
 #projects {
@@ -133,8 +149,35 @@ nav .close-btn {
   text-align: center;
 }
 
-#projects p {
-  margin: 0 27.5% 15px;
+/* Styling for experience content */
+#experience {
+	color: white;
+  scroll-margin-top: 5em;
+}
+
+#experience h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.externals a {
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+#about {
+  margin: 15px 25% 0;
+  padding: 1px 0 10px 0;
+  border-radius: 15px;
+  width: 50%;
+  background-color: white;
+  color: #111;
+  scroll-margin-top: 5em;
+}
+
+#about p {
+  margin: 0 5% 15px;
   text-align: left;
   font-family: 'Helvetica', sans-serif;
   line-height: 2;
