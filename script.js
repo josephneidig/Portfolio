@@ -6,7 +6,7 @@ function toggleNav()
   if (i == 0)
   {
     document.getElementById("nav").style.height = "100%";
-    document.getElementById("nav").style.padding = "5em 0 0 0";
+    document.getElementById("nav").style.padding = "4.5em 0 0 0";
     //document.getElementById("notnav-wrapper").style.marginLeft = "250px";
     i = 1;
   }
