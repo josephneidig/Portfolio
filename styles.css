@@ -168,22 +168,33 @@ nav .close-btn {
 }
 
 /* Styling for experience content */
-#experience {
+#experiences {
 	padding: 1px 0 30px 0;
 	background-color: #43A963;
 	color: white;
-  scroll-margin-top: 5em;
+  scroll-margin-top: 3em;
 }
 
-#experience h2 {
+#experiences h2 {
   font-size: 3em;
   text-align: center;
 }
 
-.externals a {
-  font-size: 2em;
-  text-decoration: none;
-  color: white;
+#experiences h3 {
+	font-size: 2em;
+	margin: 0 5% 15px;
+	text-align: left;
+	font-family: 'Helvetica', sans-serif;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+
+.experience {
+	border-bottom-style: solid;
+}
+
+#last-experience {
+	padding-top: 10px;
 }
 
 /* Fade-in animation styling */
