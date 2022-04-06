@@ -1,4 +1,5 @@
 var i = 0; // Flag for navigation; 0 = hidden, 1 = visible
+var navInput = document.getElementById("nav-btn"); // We need to parse inputs to our nav toggle
 
 // Toggle navigation visibility
 function toggleNav()
@@ -18,3 +19,12 @@ function toggleNav()
     i = 0;
   }
 }
+
+// Our nav toggle does not natively have functionality with the enter key, so
+// this adds it to accomodate users who navigate via tabs & enter
+navInput.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    document.getElementById("nav-btn").click();
+  }
+});
