@@ -6,16 +6,24 @@ function toggleNav()
 {
   if (i == 0)
   {
-    document.getElementById("nav").style.height = "100%";
-    document.getElementById("nav").style.padding = "4.5em 0 0 0";
-    //document.getElementById("notnav-wrapper").style.marginLeft = "250px";
+    document.getElementById("nav").style.display = "block";
+    // For some reason, the transition property from the CSS won't work unless
+    // we wrap the code changing the height and padding in a setTimeout. Even
+    // if we're only waiting 1 millisecond. Should investigate further but
+    // functional for now. I'm losing my mind
+    setTimeout(function (){
+      document.getElementById("nav").style.height = "100%";
+      document.getElementById("nav").style.padding = "4.5em 0 0 0";
+    }, 1);
     i = 1;
   }
   else
   {
     document.getElementById("nav").style.height = "0%";
     document.getElementById("nav").style.padding = "0";
-    //document.getElementById("notnav-wrapper").style.marginLeft= "0";
+    setTimeout(function (){
+      document.getElementById("nav").style.display = "none";
+    }, 1000);
     i = 0;
   }
 }
