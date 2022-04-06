@@ -1,5 +1,5 @@
-var i = 0; // Flag for navigation; 0 = hidden, 1 = visible
-var navInput = document.getElementById("nav-btn"); // We need to parse inputs to our nav toggle
+let i = 0; // Flag for navigation; 0 = hidden, 1 = visible
+let navInput = document.getElementById("nav-btn"); // We need to parse inputs to our nav toggle
 
 // Toggle navigation visibility
 function toggleNav()
