@@ -21,6 +21,8 @@ function toggleNav()
   {
     document.getElementById("nav").style.height = "0%";
     document.getElementById("nav").style.padding = "0";
+    // Delay setting the display type to none so that the transition animation
+    // still plays; it takes place over 1s, so we need to wait 1000 milliseconds
     setTimeout(function (){
       document.getElementById("nav").style.display = "none";
     }, 1000);
