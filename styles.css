@@ -53,7 +53,7 @@ nav {
   overflow-x: hidden;
   overflow-y: hidden;
   transition: 1s;
-	display: none;
+	display: none; // Do not initially show the dropdown navigation
 }
 
 nav a {
