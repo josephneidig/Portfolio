@@ -164,8 +164,10 @@ nav .close-btn {
 	border-bottom-style: solid;
 }
 
-#last-project {
-	padding-top: 10px;
+.github-widget {
+	font-size: 1em;
+	padding-left: 39%;
+	width: 50%;
 }
 
 /* Styling for experience content */
