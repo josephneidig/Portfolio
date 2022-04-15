@@ -14,7 +14,9 @@ function toggleNav()
     setTimeout(function (){
       document.getElementById("nav").style.height = "100%";
       document.getElementById("nav").style.padding = "4.5em 0 0 0";
-
+      // If the viewport is small enough that the dropdown navigation would
+      // overlap with page content, move the page content over so that there's
+      // no overlap between the navigation and content
       if (window.innerWidth <= 1250)
       {
         document.getElementById("notnav-wrapper").style.margin = "0 0 0 250px";
@@ -26,6 +28,7 @@ function toggleNav()
   {
     document.getElementById("nav").style.height = "0%";
     document.getElementById("nav").style.padding = "0";
+    // In case we changed it earlier, reset the content margin
     document.getElementById("notnav-wrapper").style.margin = "0";
     // Delay setting the display type to none so that the transition animation
     // still plays; it takes place over 1s, so we need to wait 1000 milliseconds
@@ -35,6 +38,25 @@ function toggleNav()
     navFlag = 0;
   }
 }
+
+// We add a margin to our page content if it would overlap with the navigation
+// whenever we toggle the navigation, but we should also do the same thing
+// if the viewport is resized (since we want this to act kind of like a media
+// query). This function resizes the content if the viewport is small enough
+// AND the navigation is up
+function resizeContentListener() {
+  if (window.innerWidth <= 1250 && navFlag == 1)
+  {
+    document.getElementById("notnav-wrapper").style.margin = "0 0 0 250px";
+  }
+  else
+  {
+    document.getElementById("notnav-wrapper").style.margin = "0";
+  }
+}
+
+// Run our function whenever the viewport is resized
+window.addEventListener('resize', resizeContentListener);
 
 // Our nav toggle does not natively have functionality with the enter key, so
 // this adds it to accomodate users who navigate via tabs & enter

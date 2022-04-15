@@ -142,7 +142,8 @@ nav .close-btn {
 
 /* Styling for projects content */
 #projects {
-	padding: 0 0 40px 0;
+	padding: 1px 0 40px 0;
+	background-color: #222;
   color: white;
   scroll-margin-top: 5em;
 }
