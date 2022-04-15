@@ -1,10 +1,10 @@
-let i = 0; // Flag for navigation; 0 = hidden, 1 = visible
+let navFlag = 0; // Flag for navigation; 0 = hidden, 1 = visible
 let navInput = document.getElementById("nav-btn"); // We need to parse inputs to our nav toggle
 
 // Toggle navigation visibility
 function toggleNav()
 {
-  if (i == 0)
+  if (navFlag == 0)
   {
     document.getElementById("nav").style.display = "block";
     // For some reason, the transition property from the CSS won't work unless
@@ -15,7 +15,7 @@ function toggleNav()
       document.getElementById("nav").style.height = "100%";
       document.getElementById("nav").style.padding = "4.5em 0 0 0";
     }, 1);
-    i = 1;
+    navFlag = 1;
   }
   else
   {
@@ -26,7 +26,7 @@ function toggleNav()
     setTimeout(function (){
       document.getElementById("nav").style.display = "none";
     }, 1000);
-    i = 0;
+    navFlag = 0;
   }
 }
 
