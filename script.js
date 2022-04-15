@@ -59,12 +59,6 @@ function resizeContentListener() {
     document.getElementById("notnav-wrapper").style.padding = "4em 0 0 700px";
     document.getElementById("nav").style.padding = "4.5em 700px 0 0";
   }
-  else if (window.innerWidth <= 700 && navFlag == 0)
-  {
-    document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
-    document.getElementById("notnav-wrapper").style.margin = "0";
-    document.getElementById("nav").style.padding = "4.5em 0 0 0";
-  }
   else if (window.innerWidth <= 1250 && navFlag == 1)
   {
     document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
