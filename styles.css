@@ -6,7 +6,7 @@ html {
 /* Styling for topbar & universal page content */
 
 body {
-  background-color: #222222;
+  background-color: #43A963;
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
@@ -79,6 +79,7 @@ nav .close-btn {
 
 #notnav-wrapper {
   padding-top: 4em;
+	transition: 1s;
 }
 
 /* Styling for home & about content */
@@ -212,3 +213,12 @@ nav .close-btn {
     opacity:1;
   }
 }
+
+/* Separate page content from nav if screen is small enough */
+/*
+@media only screen and (max-width: 1250px) {
+	#notnav-wrapper {
+		margin-left: 250px;
+	}
+}
+*/

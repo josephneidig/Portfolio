@@ -14,6 +14,11 @@ function toggleNav()
     setTimeout(function (){
       document.getElementById("nav").style.height = "100%";
       document.getElementById("nav").style.padding = "4.5em 0 0 0";
+
+      if (window.innerWidth <= 1250)
+      {
+        document.getElementById("notnav-wrapper").style.margin = "0 0 0 250px";
+      }
     }, 1);
     navFlag = 1;
   }
@@ -21,6 +26,7 @@ function toggleNav()
   {
     document.getElementById("nav").style.height = "0%";
     document.getElementById("nav").style.padding = "0";
+    document.getElementById("notnav-wrapper").style.margin = "0";
     // Delay setting the display type to none so that the transition animation
     // still plays; it takes place over 1s, so we need to wait 1000 milliseconds
     setTimeout(function (){
