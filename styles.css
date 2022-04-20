@@ -221,7 +221,7 @@ nav .close-btn {
 }
 
 /* Separate page content from nav if screen is small enough */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
 	#about {
 		margin: 15px 12.5% 0;
 		width: 75%;
