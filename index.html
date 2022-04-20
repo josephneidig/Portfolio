@@ -11,95 +11,97 @@
   </head>
 
   <body>
-    <nav id="nav">
-      <div id="nav-items">
-        <a href="#" tabindex="2">Home</a>
-        <a href="#about" tabindex="3">About</a>
-        <a href="#projects" tabindex="4">Projects</a>
-        <a href="#experiences" tabindex="5">Experience</a>
+    <div id="overflow-fix">
+      <nav id="nav">
+        <div id="nav-items">
+          <a href="#" tabindex="2">Home</a>
+          <a href="#about" tabindex="3">About</a>
+          <a href="#projects" tabindex="4">Projects</a>
+          <a href="#experiences" tabindex="5">Experience</a>
+        </div>
+      </nav>
+
+      <div class="topbar">
+        <span id="nav-btn" onclick="toggleNav()" tabindex="1">
+          <i class="fas fa-bars"></i>
+        </span>
+
+        <header>neidig.me</header>
       </div>
-    </nav>
 
-    <div class="topbar">
-      <span id="nav-btn" onclick="toggleNav()" tabindex="1">
-        <i class="fas fa-bars"></i>
-      </span>
+      <div id="notnav-wrapper">
+        <main>
+          <div id="intro">
+            <div class="fadein-content">
+              <img src="assets/joey.jpg" alt="Picture of Joey">
 
-      <header>neidig.me</header>
-    </div>
+              <h1>Joseph Neidig</h1>
+              <h3>Undergraduate Computer Science at University of Central Florida</h3>
+              <span class="externals">
+                <a href="https://www.linkedin.com/in/josephneidig" tabindex="6">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/josephneidig" tabindex="7">
+                  <i class="fa-brands fa-github-square"></i>
+                </a>
+                <a href="mailto:josephneidig123@gmail.com" tabindex="8">
+                  <i class="fa-solid fa-square-envelope"></i>
+                </a>
+              </span>
+            </div>
 
-    <div id="notnav-wrapper">
-      <main>
-        <div id="intro">
-          <div class="fadein-content">
-            <img src="assets/joey.jpg" alt="Picture of Joey">
-
-            <h1>Joseph Neidig</h1>
-            <h3>Undergraduate Computer Science at University of Central Florida</h3>
-            <span class="externals">
-              <a href="https://www.linkedin.com/in/josephneidig" tabindex="6">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/josephneidig" tabindex="7">
-                <i class="fa-brands fa-github-square"></i>
-              </a>
-              <a href="mailto:josephneidig123@gmail.com" tabindex="8">
-                <i class="fa-solid fa-square-envelope"></i>
-              </a>
-            </span>
+            <section id="about">
+              <div class="fadein-content">
+                <h2>About Me</h2>
+                <p>
+                  I'm a freshman undergraduate majoring in Computer Science at the
+                  University of Central Florida, currently working as a Techranger for
+                  UCF. As a Techranger, my work mainly focuses on web development,
+                  but I am also cultivating skills by studying artificial intelligence,
+                  game design, and algorithm design.
+                  Outside of my studies and work, I enjoy spending my time as a
+                  casual graphic designer, video editor, competitive gamer, and
+                  community organizer.
+                </p>
+              </div>
+            </section>
           </div>
 
-          <section id="about">
-            <div class="fadein-content">
-              <h2>About Me</h2>
-              <p>
-                I'm a freshman undergraduate majoring in Computer Science at the
-                University of Central Florida, currently working as a Techranger for
-                UCF. As a Techranger, my work mainly focuses on web development,
-                but I am also cultivating skills by studying artificial intelligence,
-                game design, and algorithm design.
-                Outside of my studies and work, I enjoy spending my time as a
-                casual graphic designer, video editor, competitive gamer, and
-                community organizer.
-              </p>
+          <section id="projects">
+            <h2 class="fadein-content">Projects</h2>
+
+            <div class="text-box">
+              <div class="project, fadein-content">
+                <div class="github-widget" data-user="josephneidig"></div>
+              </div>
             </div>
           </section>
-        </div>
 
-        <section id="projects">
-          <h2 class="fadein-content">Projects</h2>
+          <section id="experiences">
+            <h2 class="fadein-content">Experience</h2>
 
-          <div class="text-box">
-            <div class="project, fadein-content">
-              <div class="github-widget" data-user="josephneidig"></div>
+            <div class="text-box">
+              <div id="last-experience" class="fadein-content">
+                <h3>Techrangers (02/2022 to Present)</h3>
+                <p>
+                  At Techrangers @ UCF, I provide both course development for faculty
+                  and web application development for the University itself. Techrangers
+                  work on a variety of projects focused on improving the ease of providing
+                  a high-quality education, such as Materia and ProctorHub.
+                </p>
+                <p>
+                  Specifics about my work at Techrangers will go here once I'm assigned
+                  a cohort!
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section id="experiences">
-          <h2 class="fadein-content">Experience</h2>
+        </main>
+      </div>
 
-          <div class="text-box">
-            <div id="last-experience" class="fadein-content">
-              <h3>Techrangers (02/2022 to Present)</h3>
-              <p>
-                At Techrangers @ UCF, I provide both course development for faculty
-                and web application development for the University itself. Techrangers
-                work on a variety of projects focused on improving the ease of providing
-                a high-quality education, such as Materia and ProctorHub.
-              </p>
-              <p>
-                Specifics about my work at Techrangers will go here once I'm assigned
-                a cohort!
-              </p>
-            </div>
-          </div>
-        </section>
-
-      </main>
+      <script src="script.js"></script>
+      <script src="github-widget/github-widget.min.js"></script>
     </div>
-
-    <script src="script.js"></script>
-    <script src="github-widget/github-widget.min.js"></script>
   </body>
 </html>
