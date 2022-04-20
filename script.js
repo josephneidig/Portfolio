@@ -21,6 +21,7 @@ function toggleNav()
       {
         document.getElementById("notnav-wrapper").style.padding = "4em 0 0 700px";
         document.getElementById("nav").style.padding = "4.5em 700px 0 0";
+        document.getElementsByTagName("body")[0].style.overflowY = "hidden";
       }
       else if (window.innerWidth <= 1250)
       {
@@ -39,6 +40,7 @@ function toggleNav()
     document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
     document.getElementById("notnav-wrapper").style.margin = "0";
     document.getElementById("nav").style.padding = "4.5em 0 0 0";
+    document.getElementsByTagName("body")[0].style.overflowY = "visible";
     // Delay setting the display type to none so that the transition animation
     // still plays; it takes place over 1s, so we need to wait 1000 milliseconds
     setTimeout(function (){
@@ -58,18 +60,21 @@ function resizeContentListener() {
   {
     document.getElementById("notnav-wrapper").style.padding = "4em 0 0 700px";
     document.getElementById("nav").style.padding = "4.5em 700px 0 0";
+    document.getElementsByTagName("body")[0].style.overflowY = "hidden";
   }
   else if (window.innerWidth <= 1250 && navFlag == 1)
   {
     document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
     document.getElementById("notnav-wrapper").style.margin = "0 0 0 250px";
     document.getElementById("nav").style.padding = "4.5em 0 0 0";
+    document.getElementsByTagName("body")[0].style.overflowY = "visible";
   }
   else
   {
     document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
     document.getElementById("notnav-wrapper").style.margin = "0";
     document.getElementById("nav").style.padding = "4.5em 0 0 0";
+    document.getElementsByTagName("body")[0].style.overflowY = "visible";
   }
 }
 
