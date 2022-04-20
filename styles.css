@@ -14,6 +14,7 @@ body {
 
 #overflow-fix {
 	overflow-x: hidden;
+	position: relative;
 }
 
 .topbar {
