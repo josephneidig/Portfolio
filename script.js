@@ -70,6 +70,7 @@ function resizeContentListener() {
   if (window.innerWidth <= 700 && navFlag == 1)
   {
     document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
+    document.getElementById("notnav-wrapper").style.margin = "0";
     document.getElementById("nav").style.padding = "4.5em 700px 0 0";
     document.getElementById("overflow-fix").style.overflowY = "hidden";
   }
