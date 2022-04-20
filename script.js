@@ -19,7 +19,7 @@ function toggleNav()
       // no overlap between the navigation and content
       if (window.innerWidth <= 700)
       {
-        document.getElementById("notnav-wrapper").style.padding = "4em 0 0 700px";
+        document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
         document.getElementById("nav").style.padding = "4.5em 700px 0 0";
         document.getElementById("overflow-fix").style.overflowY = "hidden";
       }
@@ -58,7 +58,7 @@ function toggleNav()
 function resizeContentListener() {
   if (window.innerWidth <= 700 && navFlag == 1)
   {
-    document.getElementById("notnav-wrapper").style.padding = "4em 0 0 700px";
+    document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
     document.getElementById("nav").style.padding = "4.5em 700px 0 0";
     document.getElementById("overflow-fix").style.overflowY = "hidden";
   }
