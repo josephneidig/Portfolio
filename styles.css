@@ -217,10 +217,8 @@ nav .close-btn {
 }
 
 /* Separate page content from nav if screen is small enough */
-/*
-@media only screen and (max-width: 1250px) {
-	#notnav-wrapper {
-		margin-left: 250px;
+@media only screen and (max-width: 600px) {
+	#experiences h3 {
+		font-size: 1.5em;
 	}
 }
-*/
