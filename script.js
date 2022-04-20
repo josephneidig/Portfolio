@@ -7,16 +7,20 @@ function toggleNav()
   if (navFlag == 0)
   {
     document.getElementById("nav").style.display = "block";
+    if (window.innerWidth <= 700)
+    {
+      document.getElementById("nav").style.padding = "4.5em 700px 0 0";
+    }
     // For some reason, the transition property from the CSS won't work unless
     // we wrap the code changing the height and padding in a setTimeout. Even
     // if we're only waiting 1 millisecond. Should investigate further but
     // functional for now. I'm losing my mind
     setTimeout(function (){
       document.getElementById("nav").style.height = "100%";
-      document.getElementById("nav").style.padding = "4.5em 0 0 0";
       // If the viewport is small enough that the dropdown navigation would
       // overlap with page content, move the page content over so that there's
       // no overlap between the navigation and content
+      document.getElementById("nav").style.padding = "4.5em 0 0 0";
       if (window.innerWidth <= 700)
       {
         document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
@@ -27,7 +31,6 @@ function toggleNav()
       {
         document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
         document.getElementById("notnav-wrapper").style.margin = "0 0 0 250px";
-        document.getElementById("nav").style.padding = "4.5em 0 0 0";
       }
     }, 1);
     navFlag = 1;
@@ -39,8 +42,16 @@ function toggleNav()
     // In case we changed it earlier, reset the content margin
     document.getElementById("notnav-wrapper").style.padding = "4em 0 0 0";
     document.getElementById("notnav-wrapper").style.margin = "0";
-    document.getElementById("nav").style.padding = "4.5em 0 0 0";
     document.getElementById("overflow-fix").style.overflowY = "visible";
+    // DON'T update nav padding for small screens, cleaner animation
+    if (window.innerWidth <= 700)
+    {
+      document.getElementById("nav").style.padding = "4.5em 700px 0 0";
+    }
+    else
+    {
+      document.getElementById("nav").style.padding = "4.5em 0 0 0";
+    }
     // Delay setting the display type to none so that the transition animation
     // still plays; it takes place over 1s, so we need to wait 1000 milliseconds
     setTimeout(function (){
